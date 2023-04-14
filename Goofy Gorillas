@@ -1,0 +1,16 @@
+import sys
+import math
+import string
+
+cases = int(sys.stdin.readline().rstrip())
+
+for caseNum in range(cases):#runs a for loop for test cases
+        line = sys.stdin.readline().rstrip()
+        first, second = (line.split(" "))
+        first = sorted(first)
+        second = sorted(second)
+        if first == second:
+            print("true")
+        else:
+            print("false")
+        
